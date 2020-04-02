@@ -1,0 +1,110 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">Продажа курсов</a>
+    <a href="#" data-target="mobile-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      {{#if isHome}}
+      <li class="active">
+        <a href="/">Главная</a>
+      </li>
+      {{else}}
+      <li>
+        <a href="/">Главная</a>
+      </li>
+      {{/if}}
+      {{#if isCourses}}
+      <li class="active">
+        <a href="/courses">Курсы</a>
+      </li>
+      {{else}}
+      <li>
+        <a href="/courses">Курсы</a>
+      </li>
+      {{/if}}
+
+      {{#if isAuth}}
+      {{#if isAdd}}
+      <li class="active">
+        <a href="/add">Добавить курс</a>
+      </li>
+      {{else}}
+      <li>
+        <a href="/add">Добавить курс</a>
+      </li>
+      {{/if}}
+
+      {{#if isProfile}}
+      <li class="active">
+        <a href="/profile">Профиль</a>
+      </li>
+      {{else}}
+      <li>
+        <a href="/profile">Профиль</a>
+      </li>
+      {{/if}}
+      {{#if isCart}}
+      <li class="active">
+        <a href="/cart">Корзина</a>
+      </li>
+      {{else}}
+      <li>
+        <a href="/cart">Корзина</a>
+      </li>
+      {{/if}}
+      {{#if isOrder}}
+      <li class="active">
+        <a href="/orders">Заказы</a>
+      </li>
+      {{else}}
+      <li>
+        <a href="/orders">Заказы</a>
+      </li>
+      {{/if}}
+      <li>
+        <a href="/auth/logout">Выйти</a>
+      </li>
+      {{else}}
+      {{#if isLogin}}
+      <li class="active">
+        <a href="/auth/login#login">Авторизация</a>
+      </li>
+      {{else}}
+      <li>
+        <a href="/auth/login#login">Авторизация</a>
+      </li>
+      {{/if}}
+      {{/if}}
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-menu">
+  <li>
+    <a href="/">Главная</a>
+  </li>
+  <li>
+    <a href="/courses">Курсы</a>
+  </li>
+  {{#if isAuth}}
+  <li>
+    <a href="/add">Добавить курс</a>
+  </li>
+  <li>
+    <a href="/profile">Профиль</a>
+  </li>
+  <li>
+    <a href="/cart">Корзина</a>
+  </li>
+  <li>
+    <a href="/orders">Заказы</a>
+  </li>
+  {{/if}}
+  <li>
+    <a href="/auth/login#login">Авторизация</a>
+  </li>
+  {{#if isAuth}}
+  <li>
+    <a href="/auth/logout">Выйти</a>
+  </li>
+  {{/if}}
+</ul>
