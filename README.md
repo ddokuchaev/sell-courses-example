@@ -5,12 +5,22 @@ This works on node.js + native Javascript
 I`m use in this project:
 - express
 - csurf
-- connect-flash
+- connect-flash (for user notifications)
 - mongodb as database
 - handlebars
 - session for express
-- connect-mongodb-session
-- helmet
-- compression
+- connect-mongodb-session (store session in database)
+- helmet (protect headers)
+- compression (compresson static datafiles)
+
+Features:
+- login/auth form
+- email confirmation
+- reset pass from email
+- add/edit/remove course
+- cart form
+- orders form
+- prifile form
+- upload files (avatar) in profile form
 
 App deployed on next link: https://apricot-surprise-97543.herokuapp.com/
