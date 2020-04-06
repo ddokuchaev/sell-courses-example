@@ -1,5 +1,3 @@
-# sell-courses-example
-
 This app is test app for sell online-courses for developers
 
 This works on node.js + native Javascript + MongoDB.
